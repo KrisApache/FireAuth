@@ -45,7 +45,7 @@ $(document).ready(function () {
         return firebase.auth().signInWithPopup(provider).then(function(result) {
             console.log("success");
 
-            window.location = 'https://krisapache.github.io/Giphy-App/';
+            // window.location = 'https://krisapache.github.io/Giphy-App/';
             // This gives you a Google Access Token. You can use it to access the Google API.
             var token = result.credential.accessToken;
             // The signed-in user info.
@@ -93,7 +93,7 @@ $(document).ready(function () {
     firebase.auth().onAuthStateChanged(function(firebaseUser){
         if(firebaseUser){
             console.log(firebaseUser);
-            // window.location = 'https://krisapache.github.io/Giphy-App/';
+            window.location = './logoutpage.html';
             // $("#login").addclass("hide");
             // $("#logout").removeclass("hide");
         }
