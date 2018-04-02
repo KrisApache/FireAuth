@@ -93,7 +93,7 @@ $(document).ready(function () {
     firebase.auth().onAuthStateChanged(function(firebaseUser){
         if(firebaseUser){
             console.log(firebaseUser);
-            window.location = 'https://krisapache.github.io/Giphy-App/';
+            // window.location = 'https://krisapache.github.io/Giphy-App/';
             // $("#login").addclass("hide");
             // $("#logout").removeclass("hide");
         }
