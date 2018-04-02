@@ -33,40 +33,40 @@ $(document).ready(function () {
     //     // ...
     //   });
 
-    $('#login').on('click', function(){
+    // $('#login').on('click', function(){
 
         
 
-        // event.preventDefault();
-        var provider = new firebase.auth.GoogleAuthProvider();
-        // provider.addScope('https://www.googleapis.com/auth/drive');
-        // provider.addScope('profile');
-        // provider.addScope('email');
-        return firebase.auth().signInWithPopup(provider).then(function(result) {
-            console.log("success");
+    //     // event.preventDefault();
+    //     var provider = new firebase.auth.GoogleAuthProvider();
+    //     // provider.addScope('https://www.googleapis.com/auth/drive');
+    //     // provider.addScope('profile');
+    //     // provider.addScope('email');
+    //     return firebase.auth().signInWithPopup(provider).then(function(result) {
+    //         console.log("success");
 
-            window.location = './logoutpage.html';
-            // This gives you a Google Access Token. You can use it to access the Google API.
-            var token = result.credential.accessToken;
-            // The signed-in user info.
-            var user = result.user;
-            // ...
-          })
-          .catch(function(error) {
-            console.log('Google sign in error', error);
-          });
+    //         window.location = './logoutpage.html';
+    //         // This gives you a Google Access Token. You can use it to access the Google API.
+    //         var token = result.credential.accessToken;
+    //         // The signed-in user info.
+    //         var user = result.user;
+    //         // ...
+    //       })
+    //       .catch(function(error) {
+    //         console.log('Google sign in error', error);
+    //       });
 
-        // var txtEmail = $("#exampleInputEmail1").val();
-        // var txtPass = $("#exampleInputPassword1").val();
+    //     // var txtEmail = $("#exampleInputEmail1").val();
+    //     // var txtPass = $("#exampleInputPassword1").val();
 
-        // var provider = new firebase.auth.GoogleAuthProvider();
+    //     // var provider = new firebase.auth.GoogleAuthProvider();
 
-        // var auth = firebase.auth();
-        // var promise = auth.signInWithEmailAndPassword(txtEmail,txtPass);
+    //     // var auth = firebase.auth();
+    //     // var promise = auth.signInWithEmailAndPassword(txtEmail,txtPass);
 
-        // promise.catch(e => console.log(e.message));
+    //     // promise.catch(e => console.log(e.message));
 
-    });
+    // });
 
     // $(document).on('click', '#register', function(){
 
