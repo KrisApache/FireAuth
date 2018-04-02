@@ -39,9 +39,9 @@ $(document).ready(function () {
 
         // event.preventDefault();
         var provider = new firebase.auth.GoogleAuthProvider();
-        provider.addScope('https://www.googleapis.com/auth/drive');
-        provider.addScope('profile');
-        provider.addScope('email');
+        // provider.addScope('https://www.googleapis.com/auth/drive');
+        // provider.addScope('profile');
+        // provider.addScope('email');
         return firebase.auth().signInWithPopup(provider).then(function(result) {
             console.log("success");
             // This gives you a Google Access Token. You can use it to access the Google API.
